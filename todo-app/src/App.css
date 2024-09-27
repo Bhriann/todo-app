@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/images/AnimeBedroom BG.jpeg'); /* Full-page background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  width: 400px;
+  padding: 20px; 
+  background-image: url('/public/images/Cork Texture.jpg'); /* Cork Texture BG */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  border: 10px solid #3b1b04; /* Frame */
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.app-logo {
+  width: 250px; 
+  height: auto;  
+  display: block;
+  margin: 0 auto; 
+}
+
+.add-todo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+  background-color: #fff59f;
+  border-radius: 5px;
+  min-width: 100px;
+  max-width: 100%;
+}
+
+.add-todo button {
+  padding: 8px 16px;
+  background-color: #96ff51;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #000000;
+}
+
+.add-todo button:hover {
+  background-color: #63a100;
+  color: #ffffff;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  overflow-y: auto;
+  height: 200px;
+}
+
+.todo-list p {
+  text-align: center;
+  font-size: 18px;          
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffee54;
+  border: 1px solid #000000;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+  max-width: 100%;
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; 
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-right: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 60%; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; /* Add ellipsis (...) for long text */
+}
+
+.todo-item.completed {
+  background-color: #b4ff83;
+}
+
+.todo-item .strike {
+  text-decoration: line-through;
+}
+
+.todo-actions button {
+  margin-left: 5px;
+  padding: 5px;
+  border: none;
+  background-color: #ed9d3b;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-actions {
+  display: flex;
+  flex-wrap: nowrap; 
+}
+
+.todo-actions button:hover {
+  background-color: #cf8223;
+}
+
+.todo-actions button:disabled {
+  background-color: #ff8282;
+}
+
+
